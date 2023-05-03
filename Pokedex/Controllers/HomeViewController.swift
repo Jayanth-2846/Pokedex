@@ -14,8 +14,13 @@ class HomeViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        PokeAPI().getData() {pokemon in print(pokemon)
+        for pokemon in pokemon {
+            print(pokemon.name)
+        }
+        }
     }
-
     //MARK: - TableView Data source Methods
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
