@@ -9,27 +9,27 @@ import UIKit
 
 class HomeViewController: UITableViewController {
     
-    let pokeArray = ["Pikachu","Balbasaur","Chicken"]
-
+//    let pokeArray = ["Pikachu","Balbasaur","Chicken"]
+    var pokemon = [PokemonEntries]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        PokeAPI().getData() {pokemon in print(pokemon)
-        for pokemon in pokemon {
-            print(pokemon.name)
-        }
+        PokeAPI().getData() {result in self.pokemon = result
+            self.tableView.reloadData()
+        
         }
     }
     //MARK: - TableView Data source Methods
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return pokeArray.count
+        return pokemon.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeItemCell", for: indexPath)
-        cell.textLabel?.text = pokeArray[indexPath.row]
+        cell.textLabel?.text = pokemon[indexPath.row].name
         return cell
     }
 

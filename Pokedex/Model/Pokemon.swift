@@ -21,17 +21,11 @@ class PokeAPI {
         
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data,error == nil else {return}
-            do {
-                let pokemonList = try! JSONDecoder().decode(Pokemon.self, from: data)
-                DispatchQueue.main.async {
-                    completion(pokemonList.results)
-                }
-            } catch {
-                print(error)
+            let pokemonList = try! JSONDecoder().decode(Pokemon.self, from: data)
+            DispatchQueue.main.async {
+                completion(pokemonList.results)
             }
         }
-        task.resume()
-        
+            task.resume()
     }
-    
 }

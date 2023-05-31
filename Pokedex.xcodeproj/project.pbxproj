@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FD3725272A02F3B000EF3FA2 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3725262A02F3B000EF3FA2 /* Pokemon.swift */; };
 		FD740FFD2A02340300929F4B /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD740FFC2A02340300929F4B /* FavoritesViewController.swift */; };
+		FDC14E602A044C6A00FBF145 /* PokemonSelected.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC14E5F2A044C6A00FBF145 /* PokemonSelected.swift */; };
 		FDE747E529FFD0FF00D9FBD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE747E429FFD0FF00D9FBD2 /* AppDelegate.swift */; };
 		FDE747E729FFD0FF00D9FBD2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE747E629FFD0FF00D9FBD2 /* SceneDelegate.swift */; };
 		FDE747E929FFD0FF00D9FBD2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE747E829FFD0FF00D9FBD2 /* HomeViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		FD3725262A02F3B000EF3FA2 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		FD740FFC2A02340300929F4B /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		FDC14E5F2A044C6A00FBF145 /* PokemonSelected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonSelected.swift; sourceTree = "<group>"; };
 		FDE747E129FFD0FF00D9FBD2 /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDE747E429FFD0FF00D9FBD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDE747E629FFD0FF00D9FBD2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				FD3725262A02F3B000EF3FA2 /* Pokemon.swift */,
+				FDC14E5F2A044C6A00FBF145 /* PokemonSelected.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			files = (
 				FD3725272A02F3B000EF3FA2 /* Pokemon.swift in Sources */,
 				FDE747E929FFD0FF00D9FBD2 /* HomeViewController.swift in Sources */,
+				FDC14E602A044C6A00FBF145 /* PokemonSelected.swift in Sources */,
 				FDE747E529FFD0FF00D9FBD2 /* AppDelegate.swift in Sources */,
 				FD740FFD2A02340300929F4B /* FavoritesViewController.swift in Sources */,
 				FDE747E729FFD0FF00D9FBD2 /* SceneDelegate.swift in Sources */,
